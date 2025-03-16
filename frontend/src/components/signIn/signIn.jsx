@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom"; // Import Link for navigation
 import "./SignIn.css"; // Import the CSS file for styling
 
 const SignIn = () => {
@@ -17,7 +18,7 @@ const SignIn = () => {
         <button type="submit">Sign In</button>
       </form>
       <p className="signup-text">
-        Don't have an account? <a href="/signup">Create an account</a>
+        Don't have an account? <Link to="/signup">Create an account</Link>
       </p>
     </div>
   );
