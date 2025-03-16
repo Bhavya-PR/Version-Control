@@ -25,18 +25,17 @@ body {
   margin-bottom: 15px;
 }
 
-.rewindx-logo {
+.logo-container .rewindx-logo {
   width: 100px; /* Adjust size */
   height: auto;
 }
 
-.rewindx-title {
+.logo-container .rewindx-title {
   font-size: 1.8rem;
   font-weight: bold;
-  color: #ba15af;
+  color: #ba0db1;
   margin-top: 5px;
 }
-
 
 h2 {
   font-family: "Times New Roman", serif;
