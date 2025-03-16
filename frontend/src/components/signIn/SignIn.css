@@ -16,7 +16,7 @@ body {
   padding: 30px;
   border-radius: 10px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-  width: 400px;
+  width: 700px;
   text-align: center;
 }
 
@@ -69,11 +69,4 @@ input[type="password"] {
 
 .signup-text {
   color: black;
-  margin-top: 10px;
-  font-size: 0.9rem;
-}
-
-.signup-text a {
-  color: #201089;
-  text-decoration: none;
 }

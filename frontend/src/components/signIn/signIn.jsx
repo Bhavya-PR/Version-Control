@@ -18,7 +18,7 @@ const SignIn = () => {
         <button type="submit">Sign In</button>
       </form>
       <p className="signup-text">
-        Don't have an account? <Link to="/signup">Create an account</Link>
+        Don't have an account? <Link to="/signup">Sign Up</Link>
       </p>
     </div>
   );

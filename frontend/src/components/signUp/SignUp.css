@@ -33,16 +33,19 @@ label {
 input[type="text"],
 input[type="email"],
 input[type="password"] {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
+  width: 100%;
+  padding: 12px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  background-color: rgba(163, 172, 240, 0.7);
+  font-size: 1rem;
+  box-sizing: border-box;
 }
 
-button {
-    width: 100%;
+.container button {
+    width: 35%;
     padding: 10px;
-    background-color: #007BFF;
+    background-color: #1c0c77;
     color: white;
     border: none;
     border-radius: 4px;
