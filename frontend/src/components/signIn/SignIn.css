@@ -48,7 +48,7 @@ input[type="password"] {
 button {
   width: 25%;
   padding: 10px;
-  background-color: #2c1fb5;
+  background-color: #110a64;
   color: white;
   border: none;
   border-radius: 4px;
@@ -59,6 +59,6 @@ button:hover {
   background-color: #62287f;
 }
 
-.signup-text{
+p{
   color: black;
 }
