@@ -3,12 +3,12 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 100vh; /* Changed from height to min-height for better compatibility */
+  min-height: 100vh;
   margin: 0;
-  padding: 0; /* Added to ensure no default padding interferes */
+  padding: 0;
   background: url("https://media2.giphy.com/media/GC7C2Fi902BDG/giphy.gif") no-repeat center center fixed;
   background-size: cover;
-  box-sizing: border-box; /* Ensures padding/margins don't break layout */
+  box-sizing: border-box;
 }
 
 .container {
@@ -40,21 +40,22 @@ label {
   margin-bottom: 5px;
 }
 
-input[type="text"], input[type="password"] {
+input[type="text"],
+input[type="password"] {
   width: 100%;
   padding: 12px;
   border-radius: 5px;
   border: 1px solid #ccc;
   background-color: rgba(163, 172, 240, 0.7);
   font-size: 1rem;
-  box-sizing: border-box; /* Ensures padding doesn't affect width */
+  box-sizing: border-box;
 }
 
-button {
-  width: 80%;
+.container button {
+  width: 35%;
   padding: 12px;
-  background-color: #0e054a;
-  color: white;
+  background-color: #1c0c77;
+  color: rgb(255, 255, 255);
   border: none;
   border-radius: 5px;
   cursor: pointer;
@@ -62,8 +63,8 @@ button {
   font-weight: bold;
 }
 
-button:hover {
-  background-color: #650971;
+.container button:hover {
+  background-color: #660d78; /* Increased specificity */
 }
 
 .signup-text {
@@ -75,8 +76,4 @@ button:hover {
 .signup-text a {
   color: #201089;
   text-decoration: none;
-}
-
-.signup-text a:hover {
-  text-decoration: underline;
 }
