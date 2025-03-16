@@ -16,6 +16,9 @@ const SignIn = () => {
         </div>
         <button type="submit">Sign In</button>
       </form>
+      <p className="signup-text">
+        Don't have an account? <a href="/signup">Create an account</a>
+      </p>
     </div>
   );
 };
