@@ -10,7 +10,7 @@ body {
 }
 
 .container {
-  background: rgba(248, 248, 248); /* Slightly transparent white background */
+  background: rgb(255, 255, 255); /* Slightly transparent white background */
   padding: 20px;
   border-radius: 8px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
@@ -46,7 +46,7 @@ input[type="password"] {
 }
 
 button {
-  width: 100%;
+  width: 25%;
   padding: 10px;
   background-color: #2c1fb5;
   color: white;
