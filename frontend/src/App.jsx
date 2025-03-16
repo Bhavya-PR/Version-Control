@@ -1,15 +1,15 @@
 import React from "react";
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-import SignIn from "./components/signIn/signIn"; // Adjust the import path as necessary
-import SignUp from "./components/signUp/signUp"; // Adjust the import path as necessary
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import SignIn from "./components/signIn/signIn";
+import SignUp from "./components/signUp/signUp";
 
 const App = () => {
   return (
     <Router>
-      <Switch>
-        <Route path="/signup" component={SignUp} />
-        <Route path="/" component={SignIn} />
-      </Switch>
+      <Routes>
+        <Route path="/signup" element={<SignUp />} />
+        <Route path="/" element={<SignIn />} />
+      </Routes>
     </Router>
   );
 };
