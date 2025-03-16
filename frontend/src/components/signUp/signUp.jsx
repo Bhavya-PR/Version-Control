@@ -11,25 +11,32 @@ const SignUp = () => {
 
   const validateForm = () => {
     const newErrors = {};
-    const usernamePattern = /^[a-zA-Z][a-zA-Z0-9_@%&#]*$/; // Starts with letters, can have numbers and symbols
-    const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/; // Basic email validation
-    const passwordPattern =
-      /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[^\w\s]).{8,}$/; // Password validation
-
-    if (!usernamePattern.test(username)) {
+    const usernamePattern = /^[a-zA-Z][a-zA-Z0-9_@%&#]*$/; 
+    const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/; 
+    const passwordPattern = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[^\w\s]).{8,}$/;
+  
+    if (!username) {
+      newErrors.username = "Username is required.";
+    } else if (!usernamePattern.test(username)) {
       newErrors.username =
         "Username must start with a letter and can include letters, numbers, and symbols like _@%&#.";
     }
-    if (!emailPattern.test(email)) {
+  
+    if (!email) {
+      newErrors.email = "Email is required.";
+    } else if (!emailPattern.test(email)) {
       newErrors.email = "Invalid email format.";
     }
-    if (!passwordPattern.test(password)) {
+  
+    if (!password) {
+      newErrors.password = "Password is required.";
+    } else if (!passwordPattern.test(password)) {
       newErrors.password =
         "Password must be at least 8 characters long, include at least one uppercase letter, one lowercase letter, one number, and one symbol, with no spaces.";
     }
-
+  
     setErrors(newErrors);
-    return Object.keys(newErrors).length === 0; // Returns true if no errors
+    return Object.keys(newErrors).length === 0;
   };
 
   const handleSubmit = (e) => {
