@@ -1,34 +1,23 @@
 import React from "react";
-import "./sign_in.scss";
+import "./SignIn.css"; // Import the CSS file for styling
 
-function SignIn() {
+const SignIn = () => {
   return (
-    <div className="sign-in-container">
+    <div className="container">
       <h2>Sign In</h2>
-      <form className="sign-in-form">
-        <div className="form-group">
-          <label htmlFor="username-email">Username or Email:</label>
-          <input
-            type="text"
-            id="username-email"
-            name="username-email"
-            placeholder="Enter username or email"
-          />
+      <form>
+        <div className="input-group">
+          <label htmlFor="username">Username or Email</label>
+          <input type="text" id="username" required />
         </div>
-        <div className="form-group">
-          <label htmlFor="password">Password:</label>
-          <input
-            type="password"
-            id="password"
-            name="password"
-            placeholder="Enter password"
-          />
+        <div className="input-group">
+          <label htmlFor="password">Password</label>
+          <input type="password" id="password" required />
         </div>
         <button type="submit">Sign In</button>
-        <div className="error-message" aria-live="polite"></div>
       </form>
     </div>
   );
-}
+};
 
 export default SignIn;
